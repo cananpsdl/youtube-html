@@ -416,6 +416,18 @@
         padding-left: 40px;                                
     }
 
+    .vtime{
+        position: absolute;
+        background-color: rgb(48, 48, 48);
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        padding: 4px;
+        margin: 163px 10px 0px 297px;
+        border-radius: 3px;
+        font-weight: bold;                   
+    }
+
 }
 
 /* MasaüstüEkran için 1200px */
