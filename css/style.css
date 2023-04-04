@@ -1,0 +1,544 @@
+   
+        * {
+            font-family: 'Roboto', Arial, sans-serif;
+            /* background-image: url("../img/13.png"); */
+        }
+
+   
+        .section{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+
+        }
+
+        .boxheader i{
+            color:#000000;
+        } 
+        /* .boxheader img{
+            width: 16%;
+            margin: auto;
+        } */
+
+        /*  sol logo  */
+        .left-menu img{
+            /* height: 34px;   */
+            /* background-color: pink;    */
+            width: 14%;
+        }
+
+         /* sağ icon alanı*/
+        .right-icon{
+             text-align: right;
+        
+        }
+        
+         /* sağ icon img alanı*/
+        .right-icon img{
+                    width: 6%;
+                    border-radius: 20px;
+                    /* margin: 3px; */
+        }
+        
+
+        /*Arama alanı*/
+        .search{            
+            text-align: center;
+        }
+ 
+
+        /* Arama inputu*/
+         .search  input[type=text] {
+            width: 70%;
+            padding: 12px;
+            border-radius: 18px;
+            border: 1px solid #ccc;        
+            border-top-right-radius: 0;  
+            border-bottom-right-radius: 0;      
+            padding-left: 40px;                                
+        }
+
+        .search input[type=text]:focus{
+            background-repeat: no-repeat;
+            border: 1px solid #4dadda;
+            outline:none;
+            background-image: url('../img/searchicon.png');
+            background-position: 10px;
+            vertical-align: middle;          
+        }       
+            
+        .fa-microphone{
+                text-align: center;
+                padding-left:8px;
+                box-sizing: border-box;
+        }
+
+        .search .fa-magnifying-glass{
+                background-color:#f1f1f1;
+                color: #424242;
+                padding: 11px 20px 14px 20px;
+                margin: 0 0 0 -30px;
+                border: 1px solid #ccc;   
+                border-radius: 18px;
+                border-top-left-radius: 0;  
+                border-bottom-left-radius: 0;   
+        }
+
+
+
+
+
+  /*-------------------------Menü Alanı--------------------------------------*/      
+        .main-nav{
+            list-style: none;
+            /* padding: 25px 0px 10px 0px; */
+          
+        }
+       
+        .main-nav__item{                  
+            font-family: 'Roboto', Arial, sans-serif;
+            font-size: 12px; 
+        }
+
+        .main-nav__item li,a{
+            display: inline-block;  
+            margin: 1px; 
+        }
+
+        .main-nav__item li   a:link, a:visited {
+             background-color: #ebe9e9;
+             color: #424242;
+             padding: 8px;
+             border-radius: 8px;
+             text-align: center;
+             text-decoration: none;
+        }
+
+        .main-nav__item li  a:hover, a:active {
+            background-color: black;
+            color: white;
+            }
+        
+        .main-nav__items a{
+            display: inline-block;
+            background-color: #000000;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .main-nav__items {
+            display: inline-block;
+            background-color: #000000;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .main-nav__items  li:link, li:visited {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 8px;
+        }
+
+
+
+
+/*---------------------------------------------------------------*/
+
+
+        .content{
+                font-family: 'YouTube Sans', 'Roboto', sans-serif;  
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                padding: 10px;
+                grid-column-gap: 10px;
+                grid-row-gap: 20px;
+                margin-left:40px
+        }
+
+        .box{
+            padding: 0px 0px 17px 0px;              
+        }
+
+        /*Kanal profil görünüm bilgileri */ 
+        .col-2{
+            display: inline-block; /*profil fotosunun /alanların yan yana gelmesi için inline block önemli. ek olarak weidth değeri de etkiler.*/
+            width: calc(90% - 2px);/*  metinin kutuda kalması için */
+            vertical-align: top; /*dikeyde alanları yan yana almak içindir.*/
+            margin-top:3px
+        }
+
+        /*Video görünüm bilgileri */ 
+        .video{
+            display: grid;
+            padding: 2px;
+        }
+
+        .video img{
+                /* width:358px ; */
+                border-radius: 13px;
+                background-size: cover;
+                background-position: center;
+                text-align: center;
+        }
+
+         /*Video süre bilgileri */ 
+        .vtime{
+            position: absolute;
+            background-color: rgb(48, 48, 48);
+            color: #fff;
+            text-align: center;
+            font-size: 12px;
+            padding: 4px;
+            margin: 170px 10px 0px 308px;
+            border-radius: 3px;
+            font-weight: bold;                   
+        }
+
+        /*Kanal ismi icon görünüm bilgileri */  
+        .picon {
+            background-image: url('../img/ninja.jpg');               
+            width: 26px;
+            height: 26px;
+            /*background-posisiton : yatay ve dikeyde resim konumlandırma yapabilirsiniz.*/
+            background-position: center;
+            /*background-size : resimi çerçeve içerisine sığdırır.*/
+            background-size: cover;                                             
+        }
+
+        /*Video text görünüm bilgileri */       
+        .textdetail{
+                font-family: 'YouTube Sans', 'Roboto', sans-serif;
+                color: #424242;    
+                text-align: left;            
+        }
+
+        /*Video isim bilgileri */    
+        .textdetail p{
+                font-size: 14px;
+                color: #424242;
+                display: inline;              
+        }
+
+        /*Video kanal bilgileri*/    
+        .channel{
+            font-size: 10px;          
+        }
+
+        /*Video görüntüleme metni*/
+        .vstory{
+            font-size: 11px;
+        }
+
+
+  
+      
+/* Telefon için 576px */
+@media (min-width: 300px) and (max-width: 576px) {
+    
+    .section{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr ;
+
+    }
+
+        /*  sol logo  */
+    .left-menu img{
+            width: 50%;
+    }
+
+        
+        
+         /* sağ icon img alanı*/
+     .right-icon img{
+            width: 21%;
+            border-radius: 20px;
+    }
+
+    .content{
+        font-family: 'YouTube Sans', 'Roboto', sans-serif;  
+        display: grid;
+        grid-template-columns: 1fr ;
+        padding: 10px;
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+    }   
+
+    .box{
+        padding: 0px 0px 17px 0px;  
+        width: 100%;            
+    }
+
+    .video img{
+        /* width:358px ; */
+        border-radius: 13px;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        width: 100%;
+    }
+
+      /* Arama inputu*/
+    .search  input[type=text] {
+        width: 40%;
+        padding: 12px;
+        border-radius: 18px;
+        border: 1px solid #ccc;        
+        border-top-right-radius: 0;  
+        border-bottom-right-radius: 0;      
+        padding-left: 40px;                                
+    }
+    .vtime{
+        position: absolute;
+        background-color: rgb(48, 48, 48);
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        padding: 4px;
+        margin: 150px 10px 0px 270px;
+        border-radius: 3px;
+        font-weight: bold;                   
+    }
+    
+}
+
+/* Tabletler için 768px */
+@media (min-width: 576px) and (max-width: 767px) {
+    .section{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr ;
+
+    }
+
+        /*  sol logo  */
+    .left-menu img{
+            width: 51%;
+    }
+
+        
+        
+         /* sağ icon img alanı*/
+    .right-icon img{
+                    width: 21%;
+                    border-radius: 20px;
+    }
+
+    .content{
+        font-family: 'YouTube Sans', 'Roboto', sans-serif;  
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        padding: 10px;
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+        /* margin-left:40px */
+    }
+
+    .box{
+        padding: 0px 0px 17px 0px;  
+        width: 100%;            
+    }
+
+    .video img{
+            /* width:358px ; */
+            border-radius: 13px;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            width: 100%;
+        }
+
+
+      /* Arama inputu*/
+    .search  input[type=text] {
+        width: 40%;
+        padding: 12px;
+        border-radius: 18px;
+        border: 1px solid #ccc;        
+        border-top-right-radius: 0;  
+        border-bottom-right-radius: 0;      
+        padding-left: 40px;                                
+    }
+
+     
+}
+
+/* Masaüstü için 992px */
+@media (min-width: 767px) and (max-width: 992px) {
+
+    .section{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr ;
+
+    }
+
+        /*  sol logo  */
+    .left-menu img{
+        width: 52%;
+    }     
+        
+         /* sağ icon img alanı*/
+    .right-icon img{
+        width: 12%;
+         border-radius: 20px;
+    }
+
+    .content{
+        font-family: 'YouTube Sans', 'Roboto', sans-serif;  
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        padding: 10px;
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+    }
+
+    .box{
+        padding: 0px 0px 17px 0px;  
+        width: 100%;            
+    }
+
+    .video img{
+        border-radius: 13px;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        width: 100%;
+    }
+
+      /* Arama inputu*/
+    .search  input[type=text] {
+        width: 70%;
+        padding: 12px;
+        border-radius: 18px;
+        border: 1px solid #ccc;        
+        border-top-right-radius: 0;  
+        border-bottom-right-radius: 0;      
+        padding-left: 40px;                                
+    }
+
+}
+
+/* MasaüstüEkran için 1200px */
+@media  (min-width: 992px) and (max-width: 1200px) {
+    .section{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr ;
+
+    }
+
+        /*  sol logo  */
+    .left-menu img{
+        width: 53%;
+    }     
+        
+         /* sağ icon img alanı*/
+    .right-icon img{
+        width: 10%;
+         border-radius: 20px;
+    }
+
+
+    .content{
+        font-family: 'YouTube Sans', 'Roboto', sans-serif;  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        padding: 10px;
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+        margin-left:40px
+}
+
+.box{
+    padding: 0px 0px 17px 0px;              
+}
+
+.video img{
+        /* width:358px ; */
+        border-radius: 13px;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+}
+
+}
+
+
+/* Ekran için 1400px */
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+    .section{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr ;
+
+    }
+
+        /*  sol logo  */
+    .left-menu img{
+        width: 35%;
+    }     
+        
+         /* sağ icon img alanı*/
+    .right-icon img{
+        width: 10%;
+         border-radius: 20px;
+    }
+
+
+    .content{
+        font-family: 'YouTube Sans', 'Roboto', sans-serif;  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        padding: 10px;
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+        margin-left:40px
+}
+
+.box{
+    padding: 0px 0px 17px 0px;              
+}
+
+.video img{
+        /* width:358px ; */
+        border-radius: 13px;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+}
+    
+
+}
+
+@media (min-width: 1550px)  {
+    
+    .content{
+            font-family: 'YouTube Sans', 'Roboto', sans-serif;  
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            padding: 10px;
+            grid-column-gap: 10px;
+            grid-row-gap: 20px;
+            margin-left:40px
+    }
+
+    .box{
+        padding: 0px 0px 17px 0px;              
+    }
+    
+    .video img{
+            /* width:358px ; */
+            border-radius: 13px;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+    }
+
+    
+    .section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+
+    }
+    
+
+}
